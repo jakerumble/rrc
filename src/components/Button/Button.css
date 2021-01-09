@@ -1,0 +1,95 @@
+:root {
+  --primary: #00e0ca;
+  --warning: #e5d201;
+  --warning-hover: #d4c203;
+  --danger: #830000;
+  --danger-hover: #f34343;
+}
+
+.button {
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #00e0ca;
+  border-radius: 4px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  margin: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background: #00b7a5;
+  border-color: #00b7a5;
+}
+
+.button--inverse {
+  background: transparent;
+  color: #00e0ca;
+}
+
+.button--inverse:hover,
+.button--inverse:active {
+  color: white;
+  background: #00e0ca;
+}
+
+.button--warning {
+  background: var(--warning);
+  border-color: var(--warning);
+}
+
+.button--warning:hover,
+.button--warning:active {
+  background: var(--warning-hover);
+  border-color: var(--warning-hover);
+}
+
+.button--warning-inverse {
+  background: transparent;
+  border-color: var(--warning);
+  color: var(--warning);
+}
+
+.button--warning-inverse:hover,
+.button--warning-inverse:active {
+  color: white;
+  background: var(--warning);
+  border-color: var(--warning);
+}
+
+.button--danger {
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+.button--danger:hover,
+.button--danger:active {
+  background: var(--danger-hover);
+  border-color: var(--danger-hover);
+}
+
+.button--danger-inverse {
+  background: transparent;
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.button--danger-inverse:hover,
+.button--danger-inverse:active {
+  color: white;
+  background: var(--danger);
+  border-color: var(--danger);
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.3);
+}
